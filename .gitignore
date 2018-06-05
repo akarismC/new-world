@@ -1,0 +1,14 @@
+target
+src-generated
+generated
+*.pyc
+*.class
+*.jar
+*.log
+*.pyc
+*.spec
+
+# ignore IntelliJ IDEA generate files
+.idea
+*.iml
+overlays
