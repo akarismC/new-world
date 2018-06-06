@@ -1,1 +1,490 @@
-a,b,c,g,m
+[16:27:15,848] INFO  - TestListener [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - ***** STARTING TEST: com.ea.fusion.commerce.cart.checkout.TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject *****
+[16:27:15,848] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:15,848] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://nucleus.integration.ea.com/users?country=US&globalOptin=false&password=*abc123&dob=1983-06-13&tosVersion=Default+TOS+Version&registrationSource&language=en&anonymousUser=false&email=RiskReviewApprove88306rtest152778403584851301%40ea.com&thirdPartyOptin=false&status=ACTIVE
+[16:27:15,848] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:27:15,848] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:15,942] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:15,942] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 42863019, Date: Thu, 31 May 2018 16:27:15 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-07.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 97]
+[16:27:15,942] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:15,942] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:15,942] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userUri>/users/1000361130947/</userUri>
+
+[16:27:15,944] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING GET
+[16:27:15,944] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://nucleus.integration.ea.com/users/1000361130947?nucleus-requestorId=GOP-Fusion&X-Version-Identity=1
+[16:27:15,944] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:27:16,024] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,024] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 1066204546, Date: Thu, 31 May 2018 16:27:15 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 1123]
+[16:27:16,024] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,024] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,024] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user>
+    <userId>1000361130947</userId>
+    <email>riskreviewapprove88306rtest152778403584851301@ea.com</email>
+    <emailStatus>UNKNOWN</emailStatus>
+    <strength>WEAK</strength>
+    <dob>1983-06-13</dob>
+    <country>US</country>
+    <language>en</language>
+    <locale>en_US</locale>
+    <status>ACTIVE</status>
+    <reasonCode></reasonCode>
+    <tosVersion>Default TOS Version</tosVersion>
+    <parentalEmail></parentalEmail>
+    <thirdPartyOptin>false</thirdPartyOptin>
+    <globalOptin>false</globalOptin>
+    <dateCreated>2018-05-31T16:27Z</dateCreated>
+    <dateModified>2018-05-31T16:27Z</dateModified>
+    <lastAuthDate></lastAuthDate>
+    <registrationSource></registrationSource>
+    <authenticationSource></authenticationSource>
+    <showEmail>NO_ONE</showEmail>
+    <discoverableEmail>NO_ONE</discoverableEmail>
+    <anonymousUser>false</anonymousUser>
+    <underageUser>false</underageUser>
+    <defaultBillingAddressUri></defaultBillingAddressUri>
+    <defaultShippingAddressUri></defaultShippingAddressUri>
+    <phoneNumber></phoneNumber>
+</user>
+
+[16:27:16,025] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,026] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://nucleus.integration.ea.com/users/1000361130947/addresses?zip=85069-7100&country=US&firstname=FirstName&city=Phoenix&street=PO+BOX+37100&phonenumber=%2B8618618622300&state=AZ&type=SHIPPING&lastname=Chan
+[16:27:16,026] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:27:16,026] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,110] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,110] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 727201983, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-05.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:27:16,111] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,111] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,111] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000087230947</addressUri>
+
+[16:27:16,112] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,112] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://nucleus.integration.ea.com/users/1000361130947/addresses?zip=85069-7100&country=US&city=Phoenix&street=PO+BOX+37100&state=AZ
+[16:27:16,112] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:27:16,112] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,197] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,197] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 42863023, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-07.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:27:16,197] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,197] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,197] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000087430947</addressUri>
+
+[16:27:16,198] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,198] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/users/1000361130947/billingaccounts
+[16:27:16,198] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, X-Version-Billing:1, X-Processing-Mode:QUICK_ACCEPT, nucleus-requestorId:GOP-Fusion]
+[16:27:16,198] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,198] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <addressId>1000087430947</addressId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <userUri>/users/1000361130947</userUri>
+    <cardType>VISA</cardType>
+    <cardNumber>4269947862870912</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <cvv2>123</cvv2>
+</creditCardAccount>
+
+[16:27:16,449] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,449] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 1880057665, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /billingaccounts/1010020830947, X-Credit-Card-Provider: NUCLEUS, Content-Length: 793]
+[16:27:16,449] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:201
+[16:27:16,449] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,449] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <accountId>1010020830947</accountId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000087430947</addressUri>
+    <userUri>/users/1000361130947</userUri>
+    <dateCreated>2018-05-31T16:27Z</dateCreated>
+    <dateModified>2018-05-31T16:27Z</dateModified>
+    <cardType>VISA</cardType>
+    <cardNumber>XXXXXXXXXXXX0912</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <cvv2>123</cvv2>
+    <transient>false</transient>
+    <deleted>false</deleted>
+    <lastUsed>2018-05-31T16:27Z</lastUsed>
+</creditCardAccount>
+
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - ====== Action Start: payment mode ======
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://billing.nucleus.integration.ea.com:80/2/paymentaccountmode
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-Expand-Results:true, Nucleus-RequestorId:Integration-Tests, X-Include-Transaction-Providers:true, X-Processing-Mode:QUICK_ACCEPT, accept:application/xml]
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,451] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<paymentModeSetting mode="GCOnly" key="1010020830947"/>
+
+[16:27:16,530] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,530] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 124196123, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 2.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 112]
+[16:27:16,530] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,530] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,530] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<paymentModeSetting key="1010020830947" mode="GCOnly"/>
+
+[16:27:16,531] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - ====== Action Complete: payment mode ======
+[16:27:16,531] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,531] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://nucleus.integration.ea.com/users/1000361130947/addresses?zip=85069-7100&country=US&city=Phoenix&street=PO+BOX+37100&state=AZ
+[16:27:16,531] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:27:16,531] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,614] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,614] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 1066204556, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:27:16,614] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,614] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,614] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000088030947</addressUri>
+
+[16:27:16,616] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,616] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/users/1000361130947/billingaccounts
+[16:27:16,616] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:27:16,616] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,616] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<walletAccount>
+    <addressId>1000088030947</addressId>
+    <name>Default Wallet Account</name>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.1</ipAddress>
+    <userUri>/users/1000361130947</userUri>
+    <currency>USD</currency>
+</walletAccount>
+
+[16:27:16,803] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,803] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 124196136, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /billingaccounts/1010021030947, Content-Length: 657]
+[16:27:16,803] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:201
+[16:27:16,803] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,804] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<walletAccount>
+    <accountId>1010021030947</accountId>
+    <name>Default Wallet Account</name>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.1</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000088030947</addressUri>
+    <userUri>/users/1000361130947</userUri>
+    <dateCreated>2018-05-31T16:27Z</dateCreated>
+    <dateModified>2018-05-31T16:27Z</dateModified>
+    <currency>USD</currency>
+    <balance>0.00</balance>
+    <lowBalanceThreshold>0.00</lowBalanceThreshold>
+    <notifyLowBalance>false</notifyLowBalance>
+    <deleted>false</deleted>
+</walletAccount>
+
+[16:27:16,807] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:16,807] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/1/carts/Test_Shopping_Cart_1527784036806/pids/1000361130947/offerEntries?isAnonymous=false&countryCode=US&needFullCartInfo=true&storeId=UITEST-STR-001&currencyCode=USD
+[16:27:16,807] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, Nucleus-OnBehalfOf-RequestorId:PARTNER1, nucleus-requestorid:GOP-Fusion, X-Version-Fusion:1, accept:application/xml, Cart-CorrelationId:c468ac5b-3955-4c6b-a103-64f4f7130346]
+[16:27:16,807] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:16,807] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<offerInfoList>
+    <offers>
+        <offer>
+            <properties>
+                <property>
+                    <namespace>Nucleus.Cart.Property</namespace>
+                    <name>SkipInventoryCheck</name>
+                    <value>true</value>
+                </property>
+            </properties>
+            <offerId>Offer0050-For-Cart</offerId>
+            <quantity>1</quantity>
+        </offer>
+    </offers>
+</offerInfoList>
+
+[16:27:16,921] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:16,921] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 1973144624, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-04.iad2.infery.com, X-BUNDLE: com.ea.eadp.cart.rest, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 2810]
+[16:27:16,921] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:16,921] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:16,921] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartResponse>
+    <properties/>
+    <cartInfo>
+        <properties/>
+        <offerEntries>
+            <offerEntry>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+                <entryId>1000020230947</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <quantity>1</quantity>
+                <offerType>Base Game</offerType>
+                <priceInfo>
+                    <unitPrice>19.99</unitPrice>
+                    <unitPriceWithoutTax>19.99</unitPriceWithoutTax>
+                    <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+                    <discountInfo>
+                        <properties/>
+                        <totalDiscountAmount>0.00</totalDiscountAmount>
+                        <totalDiscountRate>0.0000</totalDiscountRate>
+                        <discountLineItems/>
+                    </discountInfo>
+                </priceInfo>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <updatedDateTime>2018-05-31T16:27:16Z</updatedDateTime>
+                <createdDateTime>2018-05-31T16:27:16Z</createdDateTime>
+            </offerEntry>
+        </offerEntries>
+        <discountLineItems/>
+        <couponEntries/>
+        <shippingInfo>
+            <properties/>
+            <priceInfo>
+                <discountInfo>
+                    <properties/>
+                    <discountLineItems/>
+                </discountInfo>
+            </priceInfo>
+            <itemCount>0</itemCount>
+        </shippingInfo>
+        <totalNumberOfItems>1</totalNumberOfItems>
+        <currency>USD</currency>
+        <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+        <totalDiscountRate>0.0000</totalDiscountRate>
+        <totalDiscountAmount>0.00</totalDiscountAmount>
+        <checkoutToken>0</checkoutToken>
+        <pidId>1000361130947</pidId>
+        <cartName>Test_Shopping_Cart_1527784036806</cartName>
+        <storeId>UITEST-STR-001</storeId>
+        <updatedDateTime>2018-05-31T16:27:16Z</updatedDateTime>
+        <createdDateTime>2018-05-31T16:27:16Z</createdDateTime>
+    </cartInfo>
+    <violations/>
+</cartResponse>
+
+[16:27:16,923] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING GET
+[16:27:16,923] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/billingaccounts/1010020830947?nucleus-requestorId=GOP-Fusion&X-Version-Billing=1
+[16:27:16,923] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:27:17,005] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:17,005] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 2038665535, Date: Thu, 31 May 2018 16:27:16 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-02.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Content-Length: 772]
+[16:27:17,005] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:17,005] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:17,005] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <accountId>1010020830947</accountId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000087430947</addressUri>
+    <userUri>/users/1000361130947</userUri>
+    <dateCreated>2018-05-31T16:27Z</dateCreated>
+    <dateModified>2018-05-31T16:27Z</dateModified>
+    <cardType>VISA</cardType>
+    <cardNumber>XXXXXXXXXXXX0912</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <transient>false</transient>
+    <deleted>false</deleted>
+    <lastUsed>2018-05-31T16:27Z</lastUsed>
+</creditCardAccount>
+
+[16:27:17,008] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:17,008] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/2/pids/1000361130947/cartCheckoutQuote
+[16:27:17,008] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, X-Sync-Fraud-Check:true, X-Expand-Results:null, Accept:application/xml, Nucleus-OnBehalfOf-RequestorId:PARTNER1, nucleus-requestorid:GOP-Fusion, X-Include-Underage:true, X-Version-Fusion:2]
+[16:27:17,008] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:17,008] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartCheckout>
+    <registrationSource>SIMSCLUB</registrationSource>
+    <locale>en_US</locale>
+    <ipAddress>4.3.2.1</ipAddress>
+    <invoiceUuid>642b53e2-9001-4d6b-9fe0-2ce5775e0413</invoiceUuid>
+    <currency>USD</currency>
+    <billingAccounts>
+        <accountId>1010021030947</accountId>
+        <accountId>1010020830947</accountId>
+    </billingAccounts>
+    <cartCountry>US</cartCountry>
+    <shippingAddressId>1000087230947</shippingAddressId>
+    <cart>
+        <shippingInfo>
+            <shippingMethodId>Economy</shippingMethodId>
+        </shippingInfo>
+        <offerEntries>
+            <offerEntry>
+                <entryId>1000020230947</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <offerType>Base Game</offerType>
+                <quantity>1</quantity>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+            </offerEntry>
+        </offerEntries>
+        <couponEntries/>
+        <checkoutToken>0</checkoutToken>
+        <storeId>UITEST-STR-001</storeId>
+        <cartName>Test_Shopping_Cart_1527784036806</cartName>
+    </cart>
+</cartCheckout>
+
+[16:27:17,253] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:17,253] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 1880057720, Date: Thu, 31 May 2018 16:27:17 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-01.iad2.infery.com, X-BUNDLE: com.ea.fusion.commerce, X-VERSION: 2.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 2487]
+[16:27:17,253] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:17,253] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:17,253] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8"?>
+<cartCheckout>
+    <cart>
+        <shippingInfo>
+            <shippingMethodId>Economy</shippingMethodId>
+        </shippingInfo>
+        <offerEntries>
+            <offerEntry>
+                <entryId>1000020230947</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <offerType>Base Game</offerType>
+                <quantity>1</quantity>
+                <priceInfo>
+                    <unitPrice>19.99</unitPrice>
+                    <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+                    <taxInfo>
+                        <totalTaxAmount>1.72</totalTaxAmount>
+                        <taxLineItems>
+                            <taxLineItem>
+                                <taxAmount>1.72</taxAmount>
+                                <taxRate>0.086</taxRate>
+                                <taxType></taxType>
+                            </taxLineItem>
+                        </taxLineItems>
+                    </taxInfo>
+                </priceInfo>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+            </offerEntry>
+        </offerEntries>
+        <couponEntries/>
+        <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+        <totalDiscountAmount>0.00</totalDiscountAmount>
+        <totalDiscountRate>0.0000</totalDiscountRate>
+        <totalTaxAmount>1.72</totalTaxAmount>
+        <totalPrice>21.71</totalPrice>
+        <checkoutToken>0</checkoutToken>
+        <storeId>UITEST-STR-001</storeId>
+        <cartName>Test_Shopping_Cart_1527784036806</cartName>
+    </cart>
+    <transactions>
+        <transaction>
+            <billingAccountUri>/billingaccounts/1010020830947</billingAccountUri>
+            <total>21.71</total>
+        </transaction>
+    </transactions>
+</cartCheckout>
+
+[16:27:17,432] INFO  - HttpClientBase [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - POST URL:http://novacommerce.integration.ea.com:80/1.0.0/rating/cart
+[16:27:17,432] INFO  - HttpClientBase [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - Http Request Payload:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartRatingRequest>
+    <country>US</country>
+    <storeId>UITEST-STR-001</storeId>
+    <pidId>1000361130947</pidId>
+    <currencyCode>USD</currencyCode>
+    <lineitems>
+        <lineitem>
+            <offerId>Offer0050-For-Cart</offerId>
+            <quantity>1</quantity>
+            <cartEntryId>1000020230947</cartEntryId>
+        </lineitem>
+    </lineitems>
+    <coupons/>
+    <shippingMethodId>Economy</shippingMethodId>
+    <shippingToCountry>US</shippingToCountry>
+</cartRatingRequest>
+
+[16:27:17,433] INFO  - HttpClientBase [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - Request Header {Nucleus-RequestorId:testCartRatingRequesterId}
+[16:27:17,433] INFO  - HttpClientBase [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - Request Header {accept:application/xml}
+[16:27:17,601] INFO  - HttpClientBase [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - Http Response Status:HTTP/1.1 200 OK
+[16:27:17,601] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:17,601] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 124196168, Date: Thu, 31 May 2018 16:27:17 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.eadp.rating.rest, X-VERSION: 1.0.0, Content-Type: application/xml; charset=ISO-8859-1, Content-Length: 1306]
+[16:27:17,601] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:200
+[16:27:17,601] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:17,601] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?><cartRatingResults><currencyCode>USD</currencyCode><lineitems><lineitem><offerId>Offer0050-For-Cart</offerId><offerType>Base Game</offerType><quantity>1</quantity><bundleType>NONE_BUNDLE</bundleType><rating currency="USD"><originalUnitPrice>19.99</originalUnitPrice><quantity>1</quantity><originalTotalPrice>19.99</originalTotalPrice><finalTotalAmount>19.99</finalTotalAmount><totalDiscountAmount>0.00</totalDiscountAmount><totalDiscountRate>0.0000</totalDiscountRate><promotions/><recommendedPromotions/></rating><properties><property><namespace>rating</namespace><name>autoDelete</name><value>FALSE</value></property><property><namespace>rating</namespace><name>platformFacetKey</name><value></value></property><property><namespace>rating</namespace><name>triggerOffer</name><value>FALSE</value></property></properties></lineitem></lineitems><bundles/><shippingInfo><itemCount>0</itemCount><promotions/><recommendedPromotions/></shippingInfo><originalTotalPrice>19.99</originalTotalPrice><finalTotalAmount>19.99</finalTotalAmount><totalDiscountAmount>0.00</totalDiscountAmount><totalDiscountRate>0.0000</totalDiscountRate><totalItemCount>1</totalItemCount><promotions/><recommendedPromotions/><violations/><coupons/><properties/></cartRatingResults>
+[16:27:17,602] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** EXECUTING POST
+[16:27:17,602] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** URI: http://novacommerce.integration.ea.com/deposits
+[16:27:17,602] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:27:17,602] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** BODY:
+[16:27:17,602] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deposit>
+    <sourceCreditCardAccountId>1010020830947</sourceCreditCardAccountId>
+    <targetWalletAccountId>1010021030947</targetWalletAccountId>
+    <currency>USD</currency>
+    <amount>10.86</amount>
+    <depositUuid>0ec391d5-b445-41c5-9b95-c798d68924fc</depositUuid>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+</deposit>
+
+[16:27:18,270] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** RECEIVE RESPONSE 
+[16:27:18,271] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** HEADERS: [X-SEQUENCE: 124196178, Date: Thu, 31 May 2018 16:27:17 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /deposits/1010066030947, Content-Length: 726]
+[16:27:18,271] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Status Code:201
+[16:27:18,271] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - *** Body:
+[16:27:18,271] INFO  - Test [TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deposit>
+    <depositId>1010066030947</depositId>
+    <depositStatus>FAILED</depositStatus>
+    <sourceCreditCardAccountId>1010020830947</sourceCreditCardAccountId>
+    <targetWalletAccountId>1010021030947</targetWalletAccountId>
+    <currency>USD</currency>
+    <amount>10.86</amount>
+    <depositUuid>0ec391d5-b445-41c5-9b95-c798d68924fc</depositUuid>
+    <depositDate>2018-05-31T16:27Z</depositDate>
+    <source>Integration-Tests</source>
+    <sourceInvoiceUri>/invoices/1010065430947</sourceInvoiceUri>
+    <targetInvoiceUri>/invoices/1010065630947</targetInvoiceUri>
+    <dateCreated>2018-05-31T16:27Z</dateCreated>
+    <ipAddress>127.0.0.0</ipAddress>
+</deposit>
+
+[16:27:18,272] INFO  - TestListener [main] - ***** ENDING TEST (FAILED): com.ea.fusion.commerce.cart.checkout.TestCartCheckoutRiskReview.testCheckoutDigitalWithCreditCardWalletRiskReject *****

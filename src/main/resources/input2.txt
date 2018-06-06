@@ -1,1 +1,474 @@
-a,b,d,e,g
+[16:11:57,088] INFO  - TestListener [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - ***** STARTING TEST: com.ea.fusion.commerce.cart.checkout.fulfillmentsRevoke.TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET *****
+[16:11:57,089] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,089] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://nucleus.integration.ea.com/users?country=US&globalOptin=false&password=*abc123&dob=1983-06-13&tosVersion=Default+TOS+Version&registrationSource&language=en&anonymousUser=false&email=RiskReviewApprove19289rtest152778311708821525%40ea.com&thirdPartyOptin=false&status=ACTIVE
+[16:11:57,089] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:11:57,089] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,181] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,182] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 42846033, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-07.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 97]
+[16:11:57,182] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,182] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,182] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userUri>/users/1000337597002/</userUri>
+
+[16:11:57,188] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING GET
+[16:11:57,188] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://nucleus.integration.ea.com/users/1000337597002?nucleus-requestorId=GOP-Fusion&X-Version-Identity=1
+[16:11:57,189] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:11:57,268] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,269] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 1066187561, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 1123]
+[16:11:57,269] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,269] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,269] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user>
+    <userId>1000337597002</userId>
+    <email>riskreviewapprove19289rtest152778311708821525@ea.com</email>
+    <emailStatus>UNKNOWN</emailStatus>
+    <strength>WEAK</strength>
+    <dob>1983-06-13</dob>
+    <country>US</country>
+    <language>en</language>
+    <locale>en_US</locale>
+    <status>ACTIVE</status>
+    <reasonCode></reasonCode>
+    <tosVersion>Default TOS Version</tosVersion>
+    <parentalEmail></parentalEmail>
+    <thirdPartyOptin>false</thirdPartyOptin>
+    <globalOptin>false</globalOptin>
+    <dateCreated>2018-05-31T16:11Z</dateCreated>
+    <dateModified>2018-05-31T16:11Z</dateModified>
+    <lastAuthDate></lastAuthDate>
+    <registrationSource></registrationSource>
+    <authenticationSource></authenticationSource>
+    <showEmail>NO_ONE</showEmail>
+    <discoverableEmail>NO_ONE</discoverableEmail>
+    <anonymousUser>false</anonymousUser>
+    <underageUser>false</underageUser>
+    <defaultBillingAddressUri></defaultBillingAddressUri>
+    <defaultShippingAddressUri></defaultShippingAddressUri>
+    <phoneNumber></phoneNumber>
+</user>
+
+[16:11:57,270] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,270] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://nucleus.integration.ea.com/users/1000337597002/addresses?zip=85069-7100&country=US&firstname=FirstName&city=Phoenix&street=PO+BOX+37100&phonenumber=%2B8618618622300&state=AZ&type=SHIPPING&lastname=Chan
+[16:11:57,270] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:11:57,270] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,358] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,358] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 42846038, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-07.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:11:57,358] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,358] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,358] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000560197002</addressUri>
+
+[16:11:57,359] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,359] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://nucleus.integration.ea.com/users/1000337597002/addresses?zip=85069-7100&country=US&city=Phoenix&street=PO+BOX+37100&state=AZ
+[16:11:57,359] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:11:57,359] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,443] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,443] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 1066187568, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:11:57,443] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,443] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,443] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000560397002</addressUri>
+
+[16:11:57,445] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,445] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/users/1000337597002/billingaccounts
+[16:11:57,445] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, X-Version-Billing:1, X-Processing-Mode:QUICK_ACCEPT, nucleus-requestorId:GOP-Fusion]
+[16:11:57,445] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,445] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <addressId>1000560397002</addressId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <userUri>/users/1000337597002</userUri>
+    <cardType>VISA</cardType>
+    <cardNumber>4361589758416645</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <cvv2>123</cvv2>
+</creditCardAccount>
+
+[16:11:57,598] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,598] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 124110734, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /billingaccounts/1010180797002, X-Credit-Card-Provider: NUCLEUS, Content-Length: 793]
+[16:11:57,598] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:201
+[16:11:57,598] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,598] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <accountId>1010180797002</accountId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000560397002</addressUri>
+    <userUri>/users/1000337597002</userUri>
+    <dateCreated>2018-05-31T16:11Z</dateCreated>
+    <dateModified>2018-05-31T16:11Z</dateModified>
+    <cardType>VISA</cardType>
+    <cardNumber>XXXXXXXXXXXX6645</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <cvv2>123</cvv2>
+    <transient>false</transient>
+    <deleted>false</deleted>
+    <lastUsed>2018-05-31T16:11Z</lastUsed>
+</creditCardAccount>
+
+[16:11:57,599] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,599] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://nucleus.integration.ea.com/users/1000337597002/addresses?zip=85069-7100&country=US&city=Phoenix&street=PO+BOX+37100&state=AZ
+[16:11:57,599] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Identity:1]
+[16:11:57,599] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,683] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,683] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 727185001, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intnucleuscgrn-05.iad2.infery.com, X-BUNDLE: com.ea.nucleus.eaid, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 106]
+[16:11:57,683] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,684] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,684] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addressUri>/addresses/1000560997002</addressUri>
+
+[16:11:57,685] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,685] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/users/1000337597002/billingaccounts
+[16:11:57,685] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:11:57,685] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,685] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<walletAccount>
+    <addressId>1000560997002</addressId>
+    <name>Default Wallet Account</name>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.1</ipAddress>
+    <userUri>/users/1000337597002</userUri>
+    <currency>USD</currency>
+</walletAccount>
+
+[16:11:57,813] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,813] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 1973060232, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-04.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /billingaccounts/1010180997002, Content-Length: 657]
+[16:11:57,813] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:201
+[16:11:57,813] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,813] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<walletAccount>
+    <accountId>1010180997002</accountId>
+    <name>Default Wallet Account</name>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.1</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000560997002</addressUri>
+    <userUri>/users/1000337597002</userUri>
+    <dateCreated>2018-05-31T16:11Z</dateCreated>
+    <dateModified>2018-05-31T16:11Z</dateModified>
+    <currency>USD</currency>
+    <balance>0.00</balance>
+    <lowBalanceThreshold>0.00</lowBalanceThreshold>
+    <notifyLowBalance>false</notifyLowBalance>
+    <deleted>false</deleted>
+</walletAccount>
+
+[16:11:57,815] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:57,815] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/1/carts/Test_Shopping_Cart_1527783117815/pids/1000337597002/offerEntries?isAnonymous=false&countryCode=US&needFullCartInfo=true&storeId=UITEST-STR-001&currencyCode=USD
+[16:11:57,815] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, Nucleus-OnBehalfOf-RequestorId:PARTNER1, nucleus-requestorid:GOP-Fusion, X-Version-Fusion:1, accept:application/xml, Cart-CorrelationId:88993d51-656b-4ffa-bc6d-4d13cb99c72e]
+[16:11:57,815] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:57,815] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<offerInfoList>
+    <offers>
+        <offer>
+            <properties>
+                <property>
+                    <namespace>Nucleus.Cart.Property</namespace>
+                    <name>SkipInventoryCheck</name>
+                    <value>true</value>
+                </property>
+            </properties>
+            <offerId>Offer0050-For-Cart</offerId>
+            <quantity>1</quantity>
+        </offer>
+    </offers>
+</offerInfoList>
+
+[16:11:57,936] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:57,936] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 2038580121, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-02.iad2.infery.com, X-BUNDLE: com.ea.eadp.cart.rest, X-VERSION: 1.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 2810]
+[16:11:57,936] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:57,936] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:57,936] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartResponse>
+    <properties/>
+    <cartInfo>
+        <properties/>
+        <offerEntries>
+            <offerEntry>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+                <entryId>1000140397002</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <quantity>1</quantity>
+                <offerType>Base Game</offerType>
+                <priceInfo>
+                    <unitPrice>19.99</unitPrice>
+                    <unitPriceWithoutTax>19.99</unitPriceWithoutTax>
+                    <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+                    <discountInfo>
+                        <properties/>
+                        <totalDiscountAmount>0.00</totalDiscountAmount>
+                        <totalDiscountRate>0.0000</totalDiscountRate>
+                        <discountLineItems/>
+                    </discountInfo>
+                </priceInfo>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <updatedDateTime>2018-05-31T16:11:57Z</updatedDateTime>
+                <createdDateTime>2018-05-31T16:11:57Z</createdDateTime>
+            </offerEntry>
+        </offerEntries>
+        <discountLineItems/>
+        <couponEntries/>
+        <shippingInfo>
+            <properties/>
+            <priceInfo>
+                <discountInfo>
+                    <properties/>
+                    <discountLineItems/>
+                </discountInfo>
+            </priceInfo>
+            <itemCount>0</itemCount>
+        </shippingInfo>
+        <totalNumberOfItems>1</totalNumberOfItems>
+        <currency>USD</currency>
+        <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+        <totalDiscountRate>0.0000</totalDiscountRate>
+        <totalDiscountAmount>0.00</totalDiscountAmount>
+        <checkoutToken>0</checkoutToken>
+        <pidId>1000337597002</pidId>
+        <cartName>Test_Shopping_Cart_1527783117815</cartName>
+        <storeId>UITEST-STR-001</storeId>
+        <updatedDateTime>2018-05-31T16:11:57Z</updatedDateTime>
+        <createdDateTime>2018-05-31T16:11:57Z</createdDateTime>
+    </cartInfo>
+    <violations/>
+</cartResponse>
+
+[16:11:57,937] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING GET
+[16:11:57,937] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/billingaccounts/1010180797002?nucleus-requestorId=GOP-Fusion&X-Version-Billing=1
+[16:11:57,938] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:11:58,024] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:58,024] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 1879972114, Date: Thu, 31 May 2018 16:11:57 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-01.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Content-Length: 772]
+[16:11:58,024] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:58,024] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:58,024] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creditCardAccount>
+    <accountId>1010180797002</accountId>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+    <status>ACTIVE</status>
+    <addressUri>/addresses/1000560397002</addressUri>
+    <userUri>/users/1000337597002</userUri>
+    <dateCreated>2018-05-31T16:11Z</dateCreated>
+    <dateModified>2018-05-31T16:11Z</dateModified>
+    <cardType>VISA</cardType>
+    <cardNumber>XXXXXXXXXXXX6645</cardNumber>
+    <expirationMonth>01</expirationMonth>
+    <expirationYear>2125</expirationYear>
+    <firstName>Leeroy</firstName>
+    <lastName>Jenkins</lastName>
+    <transient>false</transient>
+    <deleted>false</deleted>
+    <lastUsed>2018-05-31T16:11Z</lastUsed>
+</creditCardAccount>
+
+[16:11:58,032] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:58,032] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/2/pids/1000337597002/cartCheckoutQuote
+[16:11:58,032] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, X-Sync-Fraud-Check:true, X-Expand-Results:null, Accept:application/xml, Nucleus-OnBehalfOf-RequestorId:PARTNER1, nucleus-requestorid:GOP-Fusion, X-Include-Underage:true, X-Version-Fusion:2]
+[16:11:58,032] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:58,032] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartCheckout>
+    <registrationSource>SIMSCLUB</registrationSource>
+    <locale>en_US</locale>
+    <ipAddress>4.3.2.1</ipAddress>
+    <invoiceUuid>cbeba1a8-89f3-43aa-8eca-30e1128f6fa6</invoiceUuid>
+    <currency>USD</currency>
+    <billingAccounts>
+        <accountId>1010180997002</accountId>
+        <accountId>1010180797002</accountId>
+    </billingAccounts>
+    <cartCountry>US</cartCountry>
+    <shippingAddressId>1000560197002</shippingAddressId>
+    <cart>
+        <shippingInfo>
+            <shippingMethodId>Economy</shippingMethodId>
+        </shippingInfo>
+        <offerEntries>
+            <offerEntry>
+                <entryId>1000140397002</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <offerType>Base Game</offerType>
+                <quantity>1</quantity>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+            </offerEntry>
+        </offerEntries>
+        <couponEntries/>
+        <checkoutToken>0</checkoutToken>
+        <storeId>UITEST-STR-001</storeId>
+        <cartName>Test_Shopping_Cart_1527783117815</cartName>
+    </cart>
+</cartCheckout>
+
+[16:11:58,261] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:58,261] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 124110816, Date: Thu, 31 May 2018 16:11:58 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-03.iad2.infery.com, X-BUNDLE: com.ea.fusion.commerce, X-VERSION: 2.0.0, Content-Type: application/xml; charset=utf-8, Content-Length: 2487]
+[16:11:58,261] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:58,261] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:58,261] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8"?>
+<cartCheckout>
+    <cart>
+        <shippingInfo>
+            <shippingMethodId>Economy</shippingMethodId>
+        </shippingInfo>
+        <offerEntries>
+            <offerEntry>
+                <entryId>1000140397002</entryId>
+                <offerId>Offer0050-For-Cart</offerId>
+                <offerType>Base Game</offerType>
+                <quantity>1</quantity>
+                <priceInfo>
+                    <unitPrice>19.99</unitPrice>
+                    <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+                    <taxInfo>
+                        <totalTaxAmount>1.72</totalTaxAmount>
+                        <taxLineItems>
+                            <taxLineItem>
+                                <taxAmount>1.72</taxAmount>
+                                <taxRate>0.086</taxRate>
+                                <taxType></taxType>
+                            </taxLineItem>
+                        </taxLineItems>
+                    </taxInfo>
+                </priceInfo>
+                <bundleType>NONE_BUNDLE</bundleType>
+                <properties>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>autoDelete</name>
+                        <value>FALSE</value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>platformFacetKey</name>
+                        <value></value>
+                    </property>
+                    <property>
+                        <namespace>rating</namespace>
+                        <name>triggerOffer</name>
+                        <value>FALSE</value>
+                    </property>
+                </properties>
+            </offerEntry>
+        </offerEntries>
+        <couponEntries/>
+        <totalPriceWithoutTax>19.99</totalPriceWithoutTax>
+        <totalDiscountAmount>0.00</totalDiscountAmount>
+        <totalDiscountRate>0.0000</totalDiscountRate>
+        <totalTaxAmount>1.72</totalTaxAmount>
+        <totalPrice>21.71</totalPrice>
+        <checkoutToken>0</checkoutToken>
+        <storeId>UITEST-STR-001</storeId>
+        <cartName>Test_Shopping_Cart_1527783117815</cartName>
+    </cart>
+    <transactions>
+        <transaction>
+            <billingAccountUri>/billingaccounts/1010180797002</billingAccountUri>
+            <total>21.71</total>
+        </transaction>
+    </transactions>
+</cartCheckout>
+
+[16:11:58,387] INFO  - HttpClientBase [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - POST URL:http://novacommerce.integration.ea.com:80/1.0.0/rating/cart
+[16:11:58,387] INFO  - HttpClientBase [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - Http Request Payload:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cartRatingRequest>
+    <country>US</country>
+    <storeId>UITEST-STR-001</storeId>
+    <pidId>1000337597002</pidId>
+    <currencyCode>USD</currencyCode>
+    <lineitems>
+        <lineitem>
+            <offerId>Offer0050-For-Cart</offerId>
+            <quantity>1</quantity>
+            <cartEntryId>1000140397002</cartEntryId>
+        </lineitem>
+    </lineitems>
+    <coupons/>
+    <shippingMethodId>Economy</shippingMethodId>
+    <shippingToCountry>US</shippingToCountry>
+</cartRatingRequest>
+
+[16:11:58,387] INFO  - HttpClientBase [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - Request Header {Nucleus-RequestorId:testCartRatingRequesterId}
+[16:11:58,387] INFO  - HttpClientBase [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - Request Header {accept:application/xml}
+[16:11:58,560] INFO  - HttpClientBase [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - Http Response Status:HTTP/1.1 200 OK
+[16:11:58,561] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:58,561] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 1879972148, Date: Thu, 31 May 2018 16:11:58 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-01.iad2.infery.com, X-BUNDLE: com.ea.eadp.rating.rest, X-VERSION: 1.0.0, Content-Type: application/xml; charset=ISO-8859-1, Content-Length: 1306]
+[16:11:58,561] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:200
+[16:11:58,561] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:58,561] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?><cartRatingResults><currencyCode>USD</currencyCode><lineitems><lineitem><offerId>Offer0050-For-Cart</offerId><offerType>Base Game</offerType><quantity>1</quantity><bundleType>NONE_BUNDLE</bundleType><rating currency="USD"><originalUnitPrice>19.99</originalUnitPrice><quantity>1</quantity><originalTotalPrice>19.99</originalTotalPrice><finalTotalAmount>19.99</finalTotalAmount><totalDiscountAmount>0.00</totalDiscountAmount><totalDiscountRate>0.0000</totalDiscountRate><promotions/><recommendedPromotions/></rating><properties><property><namespace>rating</namespace><name>autoDelete</name><value>FALSE</value></property><property><namespace>rating</namespace><name>platformFacetKey</name><value></value></property><property><namespace>rating</namespace><name>triggerOffer</name><value>FALSE</value></property></properties></lineitem></lineitems><bundles/><shippingInfo><itemCount>0</itemCount><promotions/><recommendedPromotions/></shippingInfo><originalTotalPrice>19.99</originalTotalPrice><finalTotalAmount>19.99</finalTotalAmount><totalDiscountAmount>0.00</totalDiscountAmount><totalDiscountRate>0.0000</totalDiscountRate><totalItemCount>1</totalItemCount><promotions/><recommendedPromotions/><violations/><coupons/><properties/></cartRatingResults>
+[16:11:58,562] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** EXECUTING POST
+[16:11:58,562] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** URI: http://novacommerce.integration.ea.com/deposits
+[16:11:58,562] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [Content-Type:text/xml; charset=UTF8, nucleus-requestorId:GOP-Fusion, X-Version-Billing:1]
+[16:11:58,562] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** BODY:
+[16:11:58,562] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deposit>
+    <sourceCreditCardAccountId>1010180797002</sourceCreditCardAccountId>
+    <targetWalletAccountId>1010180997002</targetWalletAccountId>
+    <currency>USD</currency>
+    <amount>10.86</amount>
+    <depositUuid>f16c66ff-fa4e-4a0b-a757-41f9300a3da7</depositUuid>
+    <source>Integration-Tests</source>
+    <ipAddress>127.0.0.0</ipAddress>
+</deposit>
+
+[16:11:59,068] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** RECEIVE RESPONSE 
+[16:11:59,068] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** HEADERS: [X-SEQUENCE: 2038580179, Date: Thu, 31 May 2018 16:11:58 GMT, Server: Nucleus (Simple 3.1.3), X-HOSTNAME: intcommercecgrn-02.iad2.infery.com, X-BUNDLE: com.ea.nucleus.billing, X-VERSION: 1.0.0, Content-Type: text/xml; charset=UTF8, Location: /deposits/1010486797002, Content-Length: 726]
+[16:11:59,068] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Status Code:201
+[16:11:59,068] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - *** Body:
+[16:11:59,068] INFO  - Test [TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deposit>
+    <depositId>1010486797002</depositId>
+    <depositStatus>FAILED</depositStatus>
+    <sourceCreditCardAccountId>1010180797002</sourceCreditCardAccountId>
+    <targetWalletAccountId>1010180997002</targetWalletAccountId>
+    <currency>USD</currency>
+    <amount>10.86</amount>
+    <depositUuid>f16c66ff-fa4e-4a0b-a757-41f9300a3da7</depositUuid>
+    <depositDate>2018-05-31T16:11Z</depositDate>
+    <source>Integration-Tests</source>
+    <sourceInvoiceUri>/invoices/1010486197002</sourceInvoiceUri>
+    <targetInvoiceUri>/invoices/1010486397002</targetInvoiceUri>
+    <dateCreated>2018-05-31T16:11Z</dateCreated>
+    <ipAddress>127.0.0.0</ipAddress>
+</deposit>
+
+[16:11:59,070] INFO  - TestListener [main] - ***** ENDING TEST (FAILED): com.ea.fusion.commerce.cart.checkout.fulfillmentsRevoke.TestFulfillmentsRevoke.testPostRevokeFulfillmentsDigitalCCANDWALLET *****

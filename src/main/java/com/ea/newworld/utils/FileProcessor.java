@@ -1,6 +1,6 @@
 package com.ea.newworld.utils;
 
-import java.net.URL;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -17,13 +17,11 @@ public class FileProcessor {
         return instance;
     }
 
-    public String readFile(String filename) throws Exception{
+    public String readFile(String filename) throws IOException {
         String result;
 
-            byte[] inputByte = Files.readAllBytes(Paths.get(path + filename));
-            result = new String(inputByte);
-            System.out.println(result);
-
+        byte[] inputByte = Files.readAllBytes(Paths.get(path + filename));
+        result = new String(inputByte);
 
         return result;
     }
