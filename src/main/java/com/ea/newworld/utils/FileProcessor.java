@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 public class FileProcessor {
     private static FileProcessor instance;
     private static String path = "D:\\new-world\\src\\main\\resources\\";
+    private String storeFileName = "issues.log";
 
     private FileProcessor(){}
 
@@ -24,5 +25,10 @@ public class FileProcessor {
         result = new String(inputByte);
 
         return result;
+    }
+
+    public void saveIssueToFile(){
+
+
     }
 }

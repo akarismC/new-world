@@ -24,6 +24,7 @@ public class Issue {
         for(int i = 0; i < length; i++){
             index = log.indexOf(feature.charAt(i), index);
             if(index == -1){
+                System.out.println("Strings unable to match:" + feature.substring(i));
                 return false;
             }
             index++;
