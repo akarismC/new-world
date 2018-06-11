@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class FileProcessor {
     private static FileProcessor instance;
-    private static String path = "G:\\ea\\new-world\\src\\main\\resources\\";
+    private static String path = "D:\\new-world\\src\\main\\resources\\";
     private String storeFileName = "issues.log";
 
     private FileProcessor(){}

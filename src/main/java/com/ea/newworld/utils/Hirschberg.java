@@ -1,5 +1,9 @@
 package com.ea.newworld.utils;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Hirschberg {
     public Hirschberg() {
 
@@ -14,7 +18,7 @@ public class Hirschberg {
      * @param b
      * @return
      */
-    public int[] algB(int m, int n, String a, String b) {
+    public int[] algB(int m, int n, List<String> a, List<String> b) {
 
         // Step 1
         int[][] k = new int[2][n+1];
@@ -31,7 +35,7 @@ public class Hirschberg {
 
             // Step 4
             for(int j=1; j<=n; j++) {
-                if(a.charAt(i-1) == b.charAt(j-1)) {
+                if(a.get(i-1).equalsIgnoreCase(b.get(j-1))) {
                     k[1][j] = k[0][j-1] + 1;
                 }else{
                     k[1][j] = max(k[1][j-1], k[0][j]);
@@ -68,19 +72,19 @@ public class Hirschberg {
      * @param b
      * @return
      */
-    public String algC(int m, int n, String a, String b) {
+    public List<String> algC(int m, int n, List<String> a, List<String> b) {
         int i=0;
         int j=0;
-        String c = "";
+        List<String> c = new ArrayList<String>();
 
         // Step 1
         if( n==0 ) {
-            c = "";
+            c = new ArrayList<String>();
         } else if( m==1 ) {
-            c = "";
+            c = new ArrayList<String>();
             for( j=0; j<n; j++ ) {
-                if( a.charAt(0)==b.charAt(j) ) {
-                    c= ""+a.charAt(0);
+                if( a.get(0).equalsIgnoreCase(b.get(j)) ) {
+                    c.add(a.get(0));
                     break;
                 }
             }
@@ -90,17 +94,18 @@ public class Hirschberg {
             i= (int) Math.floor(((double)m)/2);
 
             // Step 3
-            int[] l1 = algB(i, n, a.substring(0,i), b);
-            int[] l2 = algB(m-i, n, reverseString(a.substring(i)), reverseString(b));
+            int[] l1 = algB(i, n, a.subList(0,i), b);
+            int[] l2 = algB(m-i, n, reverseList(new ArrayList<String>( a.subList(i, m)) ), reverseList( new ArrayList<String>(b)) );
 
             // Step 4
             int k = findK(l1, l2, n);
 
             // Step 5
-            String c1 = algC(i, k, a.substring(0, i), b.substring(0, k));
-            String c2 = algC(m-i, n-k, a.substring(i), b.substring(k));
+            List<String> c1 = algC(i, k, a.subList(0, i), b.subList(0, k));
+            List<String> c2 = algC(m-i, n-k, a.subList(i, m), b.subList(k, n));
 
-            c = c1+c2;
+            c1.addAll(c2);
+            c = c1;
         }
 
         return c; // The LCS
@@ -124,6 +129,10 @@ public class Hirschberg {
         return out;
     }
 
+    public List<String> reverseList(List<String> in){
+        Collections.reverse(in);
+        return in;
+    }
 
     /**
      * This method finds the index of the maximum sum of L1 and L2,

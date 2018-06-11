@@ -6,10 +6,12 @@ import com.ea.newworld.utils.FileProcessor;
 import com.ea.newworld.utils.InputProcessor;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args){
         System.out.println(Arrays.toString(args));
+        long startTime = System.currentTimeMillis();
 
         Issue issue = InputProcessor.getInstance().getIssue(args);
 
@@ -22,5 +24,9 @@ public class Main {
         }else{
             System.out.println("The log does not match issue: " + issue.getName());
         }
+
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        System.out.println("Time cost:" + TimeUnit.MILLISECONDS.toMinutes(duration));
     }
 }

@@ -18,48 +18,51 @@ public class FeatureString {
         System.out.println(" *** start to update feature string with new log *** ");
 
         List<String> list = preprocess(input);
-        int m = featureList.size();
-        int n = list.size();
+//        int m = featureList.size();
+//        int n = list.size();
+//
+//        int L[][] = new int[m+1][n+1];
+//
+//        for (int i=0; i<=m; i++)
+//        {
+//            for (int j=0; j<=n; j++)
+//            {
+//                if (i == 0 || j == 0)
+//                    L[i][j] = 0;
+//                else if (featureList.get(i-1).equalsIgnoreCase(list.get(j-1)))
+//                    L[i][j] = L[i-1][j-1] + 1;
+//                else
+//                    L[i][j] = L[i-1][j] >= L[i][j-1] ? L[i-1][j] : L[i][j-1];
+//            }
+//        }
+//
+//        List<String> result = new ArrayList<String>();
+//        StringBuilder sb = new StringBuilder();
+//        int start = n;
+//
+//        for(int i = m; i > 0; i--){
+//            for(int j = start; j > 0; j--){
+//                if(L[i][j] == L[i-1][j]){
+//                    break;
+//                }else if( L[i][j] == L[i][j-1]){
+//                    continue;
+//                }
+//                else if(L[i][j] == (L[i-1][j-1] + 1)){
+//                    result.add(list.get(j-1));
+//                    sb.insert(0, list.get(j-1));
+//                    start = j-1;
+//                    break;
+//                }
+//            }
+//        }
 
-        int L[][] = new int[m+1][n+1];
+        Hirschberg hirschberg = new Hirschberg();
+        featureList = hirschberg.algC(featureList.size(), list.size(), featureList, list);
 
-        for (int i=0; i<=m; i++)
-        {
-            for (int j=0; j<=n; j++)
-            {
-                if (i == 0 || j == 0)
-                    L[i][j] = 0;
-                else if (featureList.get(i-1).equalsIgnoreCase(list.get(j-1)))
-                    L[i][j] = L[i-1][j-1] + 1;
-                else
-                    L[i][j] = L[i-1][j] >= L[i][j-1] ? L[i-1][j] : L[i][j-1];
-            }
-        }
+        //featureList = result;
+        //Collections.reverse(featureList);
+        features = listToStting();
 
-        List<String> result = new ArrayList<String>();
-        StringBuilder sb = new StringBuilder();
-        int start = n;
-
-        for(int i = m; i > 0; i--){
-            for(int j = start; j > 0; j--){
-                if(L[i][j] == L[i-1][j]){
-                    break;
-                }else if( L[i][j] == L[i][j-1]){
-                    continue;
-                }
-                else if(L[i][j] == (L[i-1][j-1] + 1)){
-                    result.add(list.get(j-1));
-                    sb.append(list.get(j-1));
-                    start = j-1;
-                    break;
-                }
-            }
-        }
-
-        featureList = result;
-        features = sb.toString();
-//        Hirschberg hirschberg = new Hirschberg();
-//        features = hirschberg.algC(features.length(), input.length(), features, input);
 
         System.out.println(" *** end updating feature string with new log *** ");
     }
@@ -68,8 +71,9 @@ public class FeatureString {
         String result = origin.replaceAll("\\d\\d\\/\\d\\d\\/\\d\\d \\d\\d:\\d\\d:\\d\\d:\\d\\d\\d: ", "");
         result = result.replaceAll("\\[SEQID:\\d+\\] \\[REQID:Integration-Tests\\] \\[ATAG:.+\\]: INFO  ", "");
         result = result.replaceAll("-|\\(|\\)|:", " ");
+        result = result.replaceAll("\\r?\\n", " ");
         result = result.replaceAll(" +", " ");
-        //result = result.replaceAll("\\r?\\n", "");
+
         features = result;
         return replaceClassNames(result);
     }
@@ -84,6 +88,14 @@ public class FeatureString {
         return result;
     }
 
+    private String listToStting(){
+        StringBuilder sb = new StringBuilder();
+        for (int i=0; i<featureList.size()-1; i++){
+            sb.append(featureList.get(i) + " ");
+        }
+        sb.append(featureList.get(featureList.size()-1));
+        return sb.toString();
+    }
     public String getFeatures(){
         return features;
     }
