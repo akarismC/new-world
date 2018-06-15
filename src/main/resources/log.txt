@@ -1,0 +1,458 @@
+[SEQID:1080161712] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080161712] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161712] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161712] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080161712] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161712] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161712] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161712] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161712] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161712] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161712] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161712] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161712] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161712] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161712] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161712] RETURN; fusionhandler
+[SEQID:1080161713] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161713] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161713] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080161713] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161713] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161713] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161713] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161713] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161713] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080161713] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080161713] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161713] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161713] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161713] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080161713] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080161713] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161713] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161713] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161713] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080161713] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080161713] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080161713] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080161713] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080161713] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080161713] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080161713] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161713] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080161713] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080161713] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080161713] RETURN; fusionhandler
+[SEQID:1080161767] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080161767] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161767] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161767] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080161767] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161767] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161767] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161767] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161767] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161767] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161767] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161767] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161767] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161767] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161767] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161767] RETURN; fusionhandler
+[SEQID:1080161769] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161769] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161769] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080161769] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161769] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161769] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161769] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161769] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161769] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080161769] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080161769] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161769] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161769] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161769] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080161769] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080161769] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161769] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161769] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161769] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080161769] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080161769] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080161769] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080161769] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080161769] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080161769] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080161769] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161769] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080161769] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080161769] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080161769] RETURN; fusionhandler
+[SEQID:1080161836] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080161836] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161836] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161836] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080161836] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161836] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161836] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161836] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161836] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161836] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161836] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161836] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161836] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161836] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161836] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161836] RETURN; fusionhandler
+[SEQID:1080161838] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161838] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161838] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080161838] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161838] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161838] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161838] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161838] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161838] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080161838] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080161838] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161838] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161838] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161838] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080161838] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080161838] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161838] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161838] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161838] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080161838] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080161838] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080161838] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080161838] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080161838] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080161838] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080161838] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161838] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080161838] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080161838] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080161838] RETURN; fusionhandler
+[SEQID:1080161922] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080161922] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161922] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161922] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080161922] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161922] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161922] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161922] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161922] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161922] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161922] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161922] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161922] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161922] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161922] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161922] RETURN; fusionhandler
+[SEQID:1080161924] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161924] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161924] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080161924] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161924] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161924] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161924] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161924] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161924] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080161924] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080161924] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161924] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161924] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161924] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080161924] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080161924] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161924] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161924] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161924] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080161924] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080161924] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080161924] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080161924] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080161924] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080161924] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080161924] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161924] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080161924] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080161924] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080161924] RETURN; fusionhandler
+[SEQID:1080161940] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161940] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161940] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161940] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161940] RETURN; CartCheckoutServiceImpl.validateCommon(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080161940] RETURN; CartCheckoutServiceImpl.preCheckout(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080161940] RETURN; PostCartCheckoutHandler.preProcess(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080161940] RETURN; fusionhandler
+[SEQID:1080161988] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080161988] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161988] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161988] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080161988] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161988] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161988] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161988] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161988] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161988] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161988] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161988] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161988] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161988] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161988] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161988] RETURN; fusionhandler
+[SEQID:1080161990] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080161990] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080161990] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080161990] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080161990] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080161990] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161990] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161990] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080161990] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080161990] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080161990] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080161990] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161990] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161990] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080161990] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080161990] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080161990] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161990] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080161990] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080161990] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080161990] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080161990] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080161990] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080161990] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080161990] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080161990] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080161990] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080161990] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080161990] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080161990] RETURN; fusionhandler
+[SEQID:1080162005] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080162005] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080162005] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080162005] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162005] RETURN; CartCheckoutServiceImpl.validateCommon(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162005] RETURN; CartCheckoutServiceImpl.preCheckout(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162005] RETURN; PostCartCheckoutHandler.preProcess(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162005] RETURN; fusionhandler
+[SEQID:1080162120] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080162120] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162120] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080162120] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080162120] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080162120] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080162120] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162120] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162120] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080162120] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080162120] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080162120] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162120] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162120] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162120] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162120] RETURN; fusionhandler
+[SEQID:1080162122] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080162122] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080162122] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080162122] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080162122] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080162122] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162122] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162122] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080162122] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080162122] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080162122] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080162122] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162122] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162122] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080162122] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080162122] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162122] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162122] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162122] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080162122] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080162122] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080162122] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080162122] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080162122] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080162122] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080162122] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162122] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080162122] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080162122] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080162122] RETURN; fusionhandler
+[SEQID:1080162137] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080162137] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080162137] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080162137] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162137] RETURN; CartCheckoutServiceImpl.validateCommon(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162137] RETURN; CartCheckoutServiceImpl.preCheckout(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162137] RETURN; PostCartCheckoutHandler.preProcess(..);com.ea.fusion.commerce.CartChangedException
+[SEQID:1080162137] RETURN; fusionhandler
+[SEQID:1080162196] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckoutQuote
+[SEQID:1080162196] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162196] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080162196] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:true
+[SEQID:1080162196] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080162196] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080162196] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162196] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162196] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080162196] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080162196] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080162196] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162196] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162196] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162196] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162196] RETURN; fusionhandler
+[SEQID:1080162198] ENTER; fusionhandler HP; handlerPath:/pids/[0-9]+/cartCheckout
+[SEQID:1080162198] ENTER; PostCartCheckoutHandler.preProcess(..) HP;
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.preCheckout(..) HP;
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.validateCommon(..) HP;
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.validateCommon(..)
+[SEQID:1080162198] ENTER; RatingServiceDecorator.validateRating(..) HP;
+[SEQID:1080162198] RETURN; RatingServiceDecorator.validateRating(..)
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.fetchOffers(..) HP; isCheckoutQuote:false
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.fetchOffers(..)
+[SEQID:1080162198] ENTER; Validator.validateBillingAccountAndCurrency(..) HP;
+[SEQID:1080162198] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162198] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162198] RETURN; Validator.validateBillingAccountAndCurrency(..)
+[SEQID:1080162198] ENTER; Validator.validatePaymentAgreement(..) HP;
+[SEQID:1080162198] RETURN; Validator.validatePaymentAgreement(..)
+[SEQID:1080162198] ENTER; RevenueAllocationServiceDecorator.allocateRevenue(..) HP;
+[SEQID:1080162198] RETURN; RevenueAllocationServiceDecorator.allocateRevenue(..)
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.validateCheckout(..) HP;
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162198] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162198] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.validateAllOffers(..) HP;
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.validateAllOffers(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.validateCheckout(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.preCheckout(..)
+[SEQID:1080162198] RETURN; PostCartCheckoutHandler.preProcess(..)
+[SEQID:1080162198] ENTER; PostCartCheckoutHandler.process(..) HP;
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.checkout(..) HP;
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.createDebitInvoice(..) HP;
+[SEQID:1080162198] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162198] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.createDebitInvoice(..)
+[SEQID:1080162198] ENTER; InvoiceServiceDecorator.createDebitInvoice(..) HP;
+[SEQID:1080162198] RETURN; InvoiceServiceDecorator.createDebitInvoice(..)
+[SEQID:1080162198] ENTER; InvoiceServiceDecorator.captureDebitInvoice(..) HP;
+[SEQID:1080162198] RETURN; InvoiceServiceDecorator.captureDebitInvoice(..)
+[SEQID:1080162198] ENTER; CartServiceDecorator.closeCart(..) HP;
+[SEQID:1080162198] RETURN; CartServiceDecorator.closeCart(..)
+[SEQID:1080162198] ENTER; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..) HP;
+[SEQID:1080162198] ENTER; BillingServiceDecorator.getBillingAccount(..) HP;
+[SEQID:1080162198] RETURN; BillingServiceDecorator.getBillingAccount(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.sendOrderConfirmationEmail(..)
+[SEQID:1080162198] RETURN; CartCheckoutServiceImpl.checkout(..)
+[SEQID:1080162198] RETURN; PostCartCheckoutHandler.process(..)
+[SEQID:1080162198] RETURN; fusionhandler

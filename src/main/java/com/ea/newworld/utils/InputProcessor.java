@@ -1,120 +1,44 @@
 package com.ea.newworld.utils;
 
-import com.ea.newworld.issue.FeatureString;
-import com.ea.newworld.issue.Issue;
-
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 public class InputProcessor {
-    private String issueIndicator = "-issue"; // known issue name and input files, pattern "-issue issuename file1.txt file2.txt ..."
-    private String logIndicator = "-log"; // the log file to be identified, pattern "-log file.txt"
-    private static InputProcessor instance;
 
     private InputProcessor(){}
 
-    public static InputProcessor getInstance(){
-        if(instance == null){
-            instance = new InputProcessor();
-        }
-        return instance;
-    }
+//    param : log file name
+//    return : a hashmap of sequence id and log message
+    public static HashMap<String, String> divideBySequenceId(String filename){
+        HashMap<String, String> strings = new HashMap<>();
 
-    private String getIssueName(String[] args){
-        String result = null;
-        for(int i=0; i<args.length; i++){
-            if(args[i].equalsIgnoreCase(issueIndicator)){
-                try{
-                    result = args[i+1];
-                    break;
-                }catch (ArrayIndexOutOfBoundsException e){
-                    System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-                    System.exit(0);
-                }
+        List<String> content = FileProcessor.readFileByLines(filename);
+
+        for (String s : content){
+            String[] data = getIdAndLog(s);
+            if(strings.containsKey(data[0])){
+                String val = strings.get(data[0]);
+                strings.put(data[0], val+data[1]);
+            }else{
+                strings.put(data[0], data[1]);
             }
         }
 
-        if(result == null){
-            System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-            System.exit(0);
-        }
-        return result;
+        return strings;
     }
 
-    private FeatureString getFeature(String[] args){
-        FeatureString result = null;
-        for(int i = 0; i < args.length; i++){
-            if(args[i].equalsIgnoreCase(issueIndicator)){
-                try{
-                    String content = FileProcessor.getInstance().readFile(args[i+2]);
-                    result = new FeatureString(content);
-                    for (int index = i+3; index < args.length; index++){
-                        if(args[index].equalsIgnoreCase(logIndicator)){
-                            break;
-                        }
-                        content = FileProcessor.getInstance().readFile(args[index]);
-                        result.updateWithFile(content);
-                    }
-                }catch (IOException e){
-                    System.out.println("exception happened when reading file");
-                    e.printStackTrace();
-                    System.exit(0);
-                }catch (ArrayIndexOutOfBoundsException e){
-                    System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-                    System.exit(0);
-                }
-
-                break;
-            }
+    private static String[] getIdAndLog(String line){
+        if(!line.matches("\\[SEQID:\\d+\\] .+")){
+            System.out.println("invalid log: " + line);
         }
 
-        if(result == null){
-            System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-            System.exit(0);
-        }
+        int idBegin = line.indexOf("[SEQID:");
+        int idEnd = line.indexOf("]");
 
-        return result;
-    }
+        String[] result = new String[2];
+        result[0] = line.substring(idBegin+7, idEnd);
+        result[1] = line.substring(idEnd+2)+ "\n";
 
-    public Issue getIssue(String[] args){
-        System.out.println(" *** start to get issue name and feature string *** ");
-
-        // get issue name and input files
-        String issueName = getIssueName(args);
-        FeatureString featureString = getFeature(args);
-        Issue issue = new Issue(issueName, featureString);
-
-        System.out.println(" *** end getting issue name and feature string *** ");
-
-        return issue;
-    }
-
-    public String getLogToMatch(String[] args){
-        System.out.println(" *** start to get the content of log to match *** ");
-
-        String result = null;
-        for(int i = 0; i < args.length; i++){
-            if(args[i].equalsIgnoreCase(logIndicator)){
-                try {
-                    result = FileProcessor.getInstance().readFile(args[i+1]);
-                }catch (IOException e){
-                    System.out.println("exception happened when reading file");
-                    e.printStackTrace();
-                    System.exit(0);
-                }catch (ArrayIndexOutOfBoundsException e){
-                    System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-                    System.exit(0);
-                }
-
-                break;
-            }
-        }
-
-        if(result == null){
-            System.out.println("Usage: -issue issuename file1.txt file2.txt ... -log log.txt");
-            System.exit(0);
-        }
-
-        System.out.println(" *** end getting the content of log to match *** ");
         return result;
     }
 }
